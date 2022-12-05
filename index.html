@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>LEY DE LA GRAVITACION UNIVERSAL POR NEWTON</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo nav-link">DESAFIO SOL LUNA</a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="#intro" class="nav-menu-link nav-link">INTRODUCCION</a></li>
+                <li class="nav-menu-item"><a href="#gale" class="nav-menu-link nav-link">GALERIA</a></li>
+                <li class="nav-menu-item"><a href="#ejer" class="nav-menu-link nav-link">EJERCICIOS</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <h1>LEY DE LA GRAVITACIÓN UNIVERSAL POR ISAC NEWTON</h1>
+    <hr>
+    <h2 id="intro">INTRODUCCION</h2>
+    <section>
+        <p>La ley de gravitación universal es una ley física clásica que describe la fuerza o interacción gravitatoria
+        entre distintos cuerpos con masa, fue formulada por Isaac Newton en su libro Philosophiae Naturalis 
+        Principia Mathematica, publicado el 5 de julio de 1687, donde establece por primera vez una relación
+        proporcional (deducida empíricamente de la observación) de la fuerza con que se atraen dos objetos con
+        masa. Así, Newton dedujo que la fuerza con que se atraen dos cuerpos tenía que ser proporcional al
+        producto de sus masas dividido por la distancia entre ellos al cuadrado. Para grandes distancias de
+        separación entre cuerpos se observa que dicha fuerza actúa de manera muy aproximada como si toda la
+        masa de cada uno de los cuerpos estuviese concentrada únicamente en su centro de gravedad, es decir, es
+        como si dichos objetos fuesen únicamente un punto, lo cual permite reducir enormemente la complejidad de
+        las interacciones entre cuerpos complejos. </p>
+         <table class="table1">
+            <tr><th><img src="img/formula.png" alt="" width="300" height="200" ></th></tr>
+            <tr><td>Fuerzas mutuas de atracción entre dos esferas de diferente tamaño. De acuerdo con la mecánica newtoniana las dos fuerzas son iguales en módulo, pero de sentido contrario; al estar aplicadas en diferentes cuerpos no se anulan y su efecto combinado no altera la posición del centro de gravedad conjunto de ambas esferas</td></tr>
+        </table>
+        <br>
+        <br>
+        
+        <P>Es decir, cuanto más masivos sean los cuerpos y más cercanos se encuentren, con mayor fuerza se atraerá. 
+        El valor de esta constante de gravitación universal no pudo ser establecido por Newton, que únicamente dedujo la forma 
+        de la interacción gravitatoria, pero no tenía suficientes datos como para establecer cuantitativamente su valor. Únicamente
+        dedujo que su valor debería ser muy pequeño. Solo mucho tiempo después se desarrollaron las técnicas necesarias para calcular
+        su valor, y aún hoy es una de las constantes universales conocidas con menor precisión. En 1798, se hizo el primer intento de
+        medición (véase el experimento de Cavendish) y en la actualidad, con técnicas mucho más precisas se ha llegado a estos resultados:</P>
+        <br>
+        <p>Esta ley recuerda mucho a la forma de la ley de Coulomb para las fuerzas electrostáticas, ya que ambas leyes siguen una ley de la inversa
+            del cuadrado (es decir, la fuerza decae con el cuadrado de la distancia) y ambas son proporcionales al producto de magnitudes propias de
+            los cuerpos (en el caso gravitatorio de sus masas y en el caso electrostático de su carga eléctrica).
+            <br><br>
+        </p>
+    </section>
+    <section>
+        <h2 id="gale">GALERIA</h2>
+        <hr>
+        <div class="container">
+            <div class="gallery">
+                <a target="_blank" href="img/distancia.jpg">
+                  <img src="img/distancia.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">DISTANCIA DE LA TIERRA CON LA LUNA</div>
+            </div>
+    
+            <div class="gallery">
+                <a target="_blank" href="img/ej4.jpg">
+                  <img src="img/ej4.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">EJEMPLO DE ATRACCION EN BOLAS DE BOWLING </div>
+            </div>
+    
+            <div class="gallery">
+                <a target="_blank" href="img/tierra y sol.jpg">
+                  <img src="img/tierra y sol.jpg" alt="" width="600" height="400">
+                </a>
+                <div class="desc">DISTANCIA DE LA TIERRA CON EL SOL</div>
+            </div>
+              
+            <div class="gallery">
+                <a target="_blank" href="img/EJ2.png">
+                  <img src="img/EJ2.png" alt="" width="600" height="400">
+                </a>
+                <div class="desc">EJEMPLO DE LA DISTANCIA ENTRE DOS PERSONAS</div>
+            </div>
+        </div>
+    </section>
+    <section>
+       <h2 id="ejer">EJERCICOS</h2>
+    </section>
+    <h1 class="titulos">FUERZA DE ATRACCION DE LA TIERRA CON EL SOL</h1>
+    <div class="respuesta">
+        <label for="">Introduce un valor para m(sun), la parte entera con dos decimales :</label>
+        <input type="number" id="ms" class="respuesta1">
+        <br>
+        <button onclick="fuerza()" class="">calcular</button>
+    </div>
+    <h2 class="titulos">Respuesta</h2>
+    <div id="fu" class="respuesta1"></div>
+    <br>
+    <h1 class="titulos">FUERZA DE ATRACCION DE LA TIERRA CON LA LUNA</h1>
+    <div class="respuesta">
+        <label for="">Introduce un valor para m(moon), la parte entera con dos decimales :</label>
+        <input type="number" id="ml" class="respuesta1">
+        <br>
+        <button onclick="fuerzalun()" class="">calcular</button>
+    </div>
+    <h2 class="titulos">Respuesta</h2>
+    <div id="funl" class="respuesta1"></div>
+
+    <br><br>
+    <footer class="pie">
+        DANNER MAMANI PALACIOS
+    </footer>
+    <script src="JS/p1.js"></script>
+    <script src="JS/p2.js"></script>
+</body>
+</html>
